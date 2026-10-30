@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="#241044"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs>
+  <rect width="800" height="1000" fill="url(#g)"/><circle cx="400" cy="390" r="220" fill="#fbbf24" opacity=".22"/>
+  <path d="M170 690 Q400 790 630 690 Q590 920 400 950 Q210 920 170 690Z" fill="#b45309"/>
+  <path d="M230 700 Q400 760 570 700 Q520 850 400 875 Q280 850 230 700Z" fill="#f59e0b"/>
+  <path d="M400 190 C350 330 330 420 400 520 C470 420 450 330 400 190Z" fill="#fb923c"/>
+  <text x="400" y="610" text-anchor="middle" fill="#fff7ed" font-family="serif" font-size="44">Demo Hero Photo</text>
+</svg>

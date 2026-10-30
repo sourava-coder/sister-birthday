@@ -1,0 +1,6 @@
+{
+  "name": "Arjya - Birthday & Diwali Celebration",
+  "description": "A magical Diwali-themed birthday celebration website for Arjya Ananya Nayak from Sourava Kumar Swain, featuring interactive diyas, candles, rangoli, memories, letter, fireworks, and browser-synthesized music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: 'Cinzel', serif;
+  --font-marcellus: 'Marcellus', serif;
+  --font-caveat: 'Caveat', cursive;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+@keyframes flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    opacity: 0.95;
+    filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.9)) drop-shadow(0 0 25px rgba(245, 158, 11, 0.7));
+  }
+  25% {
+    transform: scale(1.08, 0.95) rotate(1.5deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(251, 191, 36, 1)) drop-shadow(0 0 35px rgba(245, 158, 11, 0.85));
+  }
+  50% {
+    transform: scale(0.96, 1.05) rotate(-2deg);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 9px rgba(251, 191, 36, 0.85)) drop-shadow(0 0 20px rgba(245, 158, 11, 0.6));
+  }
+  75% {
+    transform: scale(1.05, 1.02) rotate(2deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 16px rgba(251, 191, 36, 1)) drop-shadow(0 0 40px rgba(245, 158, 11, 0.9));
+  }
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatGently {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.3), 0 0 40px rgba(245, 158, 11, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.6), 0 0 70px rgba(245, 158, 11, 0.35);
+  }
+}
+
+.flame-active {
+  animation: flicker 1.8s infinite ease-in-out;
+  transform-origin: bottom center;
+}
+
+.spin-slow {
+  animation: slowSpin 60s linear infinite;
+}
+
+.spin-slow-reverse {
+  animation: slowSpin 45s linear infinite reverse;
+}
+
+.float-gentle {
+  animation: floatGently 4s ease-in-out infinite;
+}
+
+.pulse-gold {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar for festive theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080511;
+}
+::-webkit-scrollbar-thumb {
+  background: #78350f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
